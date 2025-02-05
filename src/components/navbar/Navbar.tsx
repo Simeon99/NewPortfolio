@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { GoHomeFill } from 'react-icons/go';
 import { SiGmail } from 'react-icons/si';
 
 export interface INavbarProps {
