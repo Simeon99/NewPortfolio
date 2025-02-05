@@ -81,15 +81,19 @@ const PageClient = ({ slug }: { slug: string }) => {
           }
         </div>
       </div>
+      {experiances?.page?.technologies && experiances?.page?.technologies.length > 0 ? 
       <div className="max-w-screen-sw px-8 flex flex-col mt-40  mx-auto my-auto">
         <h2 className="text-[64px] max-ssw:text-[50px] text-left leading-none font-berghan">Technologies</h2>
         <div className="flex flex-row max-sm:flex-col gap-8 pt-16">
-          {experiances?.page?.technologies && experiances?.page?.technologies.map((i, index) =>
+          
+          { experiances?.page?.technologies && experiances?.page?.technologies.map((i, index) =>
             <Technologies key={index} item={i} />
           )}
         </div>
 
       </div>
+    : ""  
+    }
       <div className="w-full  bg-gray mt-40 pb-40">
         <div className="max-w-screen-sw px-8 flex flex-col gap-16  mx-auto my-auto pt-16">
           {experiances?.page?.conclusion && experiances?.page?.conclusion.map((i, index) =>

@@ -31,8 +31,9 @@ const HomeWhatIDo = () => {
                 About me
             </h1>
             <p className='ssw:text-[20px] text-justify mt-8'>
-            As a dedicated and ambitious Software Engineer with a passion for acquiring new experiences and expanding my knowledge of cutting-edge technologies, I believe your company stands out to me as the perfect match for my skills and aspirations.
-            <br /><br />Alongside my substantial experience, I can state that I am a fast learner, person with a strong work ethic and I can offer a lot of energy and will to adapt quickly. With a strong desire for continual improvement, my primary objective is to develop innovative software solutions that drive your company&apos;s growth and success.
+            I am a full-stack software developer with over two years of experience building modern, high-performance web applications. Specializing in React, Next.js, and Angular on the frontend and ASP.NET and Spring Boot on the backend, I create scalable and efficient solutions tailored to business needs.
+            <br /><br />I thrive in problem-solving environments, whether optimizing API performance, refining user interfaces, or architecting robust backend systems. My approach is hands-on and impact-driven. I&apos;ve built and contributed in building applications that streamline workflows, improve user engagement, and enhance operational efficiency.
+            <br /><br /> Beyond code, I bring a proactive mindset, strong collaboration skills, and a passion for building software that delivers real value. My goal is to craft solutions that not only solve technical challenges but also contribute to long-term business success.
             </p>
             
         </div>

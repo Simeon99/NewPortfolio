@@ -1,3 +1,6 @@
+'use client'
+
+import { useNavbar } from '@/context/NavbarContext'
 import Link from 'next/link'
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -5,6 +8,13 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { SiGmail } from 'react-icons/si'
 
 const Footer = () => {
+
+    const { scrollTo } = useNavbar();
+
+    const handleScroll = (section: string) => {
+        scrollTo(section);
+    }
+
     return (
         <div id='contact' className="overflow-hidden  mx-auto bg-[#000000] flex flex-col items-center  font-sans-pro text-grey pt-[20px] text-white">
 
@@ -15,19 +25,19 @@ const Footer = () => {
                         <div className='flex flex-col gap-4'>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">What I do</Link>
+                                <div onClick={() => handleScroll("whatIDoo")} className="hover:text-[#505050] text-[20px] font-berghan">What I do</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">About me</Link>
+                                <div onClick={() => handleScroll("about")} className="hover:text-[#505050] text-[20px] font-berghan">About me</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">Experience</Link>
+                                <div onClick={() => handleScroll("experience")} className="hover:text-[#505050] text-[20px] font-berghan">Experience</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">Tools and languages</Link>
+                                <div onClick={() => handleScroll("tools")} className="hover:text-[#505050] text-[20px] font-berghan">Tools and languages</div>
                             </div>
                         </div>
 
@@ -67,16 +77,16 @@ const Footer = () => {
                         <div className='w-full h-1 bg-green  mt-8'></div>
                         <div className='flex flex-col gap-4 col-span-2 mt-8'>
                             <div className='flex  flex-row items-center gap-[27px]'>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">What I do</Link>
+                                <div onClick={() => handleScroll("whatIDoo")} className="hover:text-[#505050] text-[20px] font-berghan">What I do</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">About me</Link>
+                                <div onClick={() => handleScroll("about")} className="hover:text-[#505050] text-[20px] font-berghan">About me</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">Experience</Link>
+                                <div onClick={() => handleScroll("experience")} className="hover:text-[#505050] text-[20px] font-berghan">Experience</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
-                                <Link href={`/`} className="hover:text-[#505050] text-[20px] font-berghan">Tools and languages</Link>
+                                <div onClick={() => handleScroll("tools")} className="hover:text-[#505050] text-[20px] font-berghan">Tools and languages</div>
                             </div>
                         </div>
                         <div className='w-full h-1 bg-green  mt-8'></div>

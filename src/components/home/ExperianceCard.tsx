@@ -12,7 +12,7 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
 
     // }
     return (
-        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white hover:bg-green hover:text-black hover:cursor-pointer`}>
+        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white hover:bg-green active:bg-green  hover:text-black hover:cursor-pointer`}>
             <div className='grid grid-cols-4 max-[980px]:grid-cols-1 px-8 max-[980px]:px-4 font-berghan  place-content-center justify-start '>
                 <div className='flex flex-col align-middle justify-center max-[980px]:hidden '>
                     <span className='text-[32px] '>
