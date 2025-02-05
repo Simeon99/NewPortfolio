@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import NavbarProvider from "@/context/NavbarContext";
 import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Simeon Ilić - Full Stack Developer",
@@ -59,6 +60,9 @@ export default function RootLayout({
   ]
   return (
     <html lang="en">
+      <Head>
+      <meta name="google-site-verification" content="mcgBOkf8HRMjBpb6xMbdgu20ns5TYMIChDr4yuHNpvU" />
+      </Head>
       <body className={`antialiased`}>
         <NavbarProvider>
           <div className="max-w-screen-sw w-full sw:px-8 items-center mx-auto my-auto">
