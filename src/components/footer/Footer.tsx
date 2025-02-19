@@ -68,7 +68,7 @@ const Footer = () => {
                     <div className='grid grid-cols-2 gap-y-6 mx-7 md:hidden'>
                         <Link href={`https://www.linkedin.com/in/simeon-ilic/`} className='flex flex-col gap-3'>
                             <FaLinkedin size={32} color='#b0ff92' />
-                            <div className="hover:text-[#505050] text-[20px]">LinkedIN</div>
+                            <div className="hover:text-[#505050] text-[20px]">LinkedIn</div>
                         </Link>
                         <Link href={`https://github.com/Simeon99`} className='flex flex-col gap-3'>
                             <FaGithub size={32} color='#b0ff92' />
