@@ -8,13 +8,10 @@ import { ResponseDataExperiance } from '@/data/experiences'
 const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, className: string }) => {
 
     const [isHovered, setIsHovered] = useState(false);
-    // const handleClick = () => {
-
-    // }
     return (
         <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white  sm:hover:bg-green active:bg-green  sm:hover:text-black  hover:cursor-pointer`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             <div className='grid grid-cols-4 max-[980px]:grid-cols-1 px-8 max-[980px]:px-4 font-berghan  place-content-center justify-start '>
                 <div className='flex flex-col align-middle justify-center max-[980px]:hidden '>
@@ -25,9 +22,9 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
                         {item.duration}
                     </span>
                 </div>
-                <div className={`text-[32px] flex items-center  max-[980px]:text-green  ${isHovered ? 'max-[980px]:text-black': ''} leading-none`}>{item.companyName} </div>
+                <div className={`text-[32px] flex items-center  max-[980px]:text-green  ${isHovered ? 'max-[980px]:text-black' : ''} leading-none`}>{item.companyName} </div>
                 <div className='flex-row items-center  gap-2 align-middle hidden max-[980px]:flex'>
-                    <div className={`h-[70%] w-[2px] bg-white ${isHovered ? 'max-[980px]:bg-black': ''} leading-none`}>
+                    <div className={`h-[70%] w-[2px] bg-white ${isHovered ? 'max-[980px]:bg-black' : ''} leading-none`}>
 
                     </div>
                     <div className='flex flex-col'>

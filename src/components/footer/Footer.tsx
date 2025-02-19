@@ -72,7 +72,7 @@ const Footer = () => {
                         </Link>
                         <Link href={`https://github.com/Simeon99`} className='flex flex-col gap-3'>
                             <FaGithub size={32} color='#b0ff92' />
-                            <div  className="hover:text-[#505050] text-[20px]">GetHub</div>
+                            <div  className="hover:text-[#505050] text-[20px]">GitHub</div>
                         </Link>
                         <div className='w-full h-1 bg-green  mt-8'></div>
                         <div className='flex flex-col gap-4 col-span-2 mt-8'>
