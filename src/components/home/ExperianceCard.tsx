@@ -9,7 +9,7 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
 
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white  sm:hover:bg-green active:bg-green  sm:hover:text-black  hover:cursor-pointer`}
+        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white  hover:bg-green active:bg-green active:text-black hover:text-black  hover:cursor-pointer`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
