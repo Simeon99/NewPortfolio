@@ -30,8 +30,37 @@ export type TechnologiesPage = {
   text: string;
 }
 export const experiances: ResponseDataExperiance[] = [
-  {
-    id: 1, fromTo: "2023-2024", duration: "1 year 3 months", companyName: "Blackbird", position: "Full-stack developer | React, Next & ASP.NET",
+  
+  { id: 1, fromTo: "2024-2025", duration: "5 months", companyName: "Belit", position: "Full-stack developer | React & ASP.NET",
+    page: {
+      title: "Belit: Full-stack developer",
+      headingText: "At Belit, I designed and developed a robust Document Management System (DMS) using ASP.NET Core API and React to streamline internal operations. Managing the project independently, I enhanced document retrieval efficiency by 60%, ensuring secure storage and seamless access while aligning the system with business needs.",
+      aboutCompany: "Belit is a Serbian IT company specializing in software development and implementation, primarily working on projects for government institutions, ministries, and the European Union. With a team of around 40 employees, the company focuses on optimizing business processes and data management in the public sector. Over the years, Belit has been involved in numerous IT projects aimed at supporting digitalization and improving administrative efficiency.",
+      aboutCompanyImages: ["/images/belit1.png", "/images/belit2.png", "/images/belit3.png"],
+      featuredProjectsText: "At Belit, I worked on developing solutions that streamlined internal processes and improved efficiency. My role involved designing and implementing a robust system that aligned with business needs while ensuring security and scalability. This project showcases my ability to independently build and optimize software solutions tailored for real-world applications.",
+      featuredProjects: [
+        {
+          title: "E-archive (DMS)",
+          text: "Designed and developed a Document Management System (DMS) to streamline internal document storage and organization for the company. \nWorked on the project independently, overseeing the full development lifecycle. \nImplemented secure document handling, ensuring controlled access with Microsoft identity and data integrity. The system provided role-based access control, ensuring that users had permissions tailored to their roles, enhancing security and compliance. \nUtilized GitLab for version control and structured development workflows. \nOptimized document retrieval processes, reducing access time by 60%.",
+          stacl: ["React", "ASP.NET Core"],
+          images: ["/images/earchive1.png", "/images/earchive2.png", "/images/earchive3.png", "/images/earchive4.png"],
+        }
+      ],
+      technologies: [
+        {title : "Frontend", text: "I worked with React to develop structured and maintainable user interfaces, ensuring smooth interaction and usability. By leveraging HTML5 and Sass, I created responsive and accessible designs tailored to internal company needs. Additionally, I focused on optimizing front-end performance and implementing role-based UI elements to align with user permissions and security requirements."},
+        {title : "Backend", text: "On the back end, I utilized ASP.NET Core API to design and develop a well-structured system with role-based access control, ensuring secure document management. My work included seamless integration with SQL databases, optimizing data storage and retrieval processes. Using GitLab for version control and structured workflows, I maintained a scalable and maintainable codebase, enhancing system efficiency and reliability."}
+      ],
+      conclusion: [
+        {title : "Challenge", text: "Managing and organizing internal company documents efficiently was a critical issue, as existing solutions lacked proper structure, access control, and retrieval efficiency. The company needed a secure, role-based Document Management System (DMS) that would allow employees to store, access, and manage files according to their permissions while ensuring data integrity and compliance."},
+        {title : "Solution", text: "I designed and developed a well-structured DMS using ASP.NET Core API and React, implementing a role-based access control system to restrict user permissions based on their roles. The system provided secure document handling, optimized search functionality, and efficient retrieval processes, ensuring that users could only access information relevant to their responsibilities. "},
+        {title : "Result", text: "The newly developed DMS significantly improved document organization and security, reducing retrieval time by 60% and ensuring proper access management across different user roles. The system streamlined internal processes, minimized document mismanagement, and provided a scalable solution for handling company records efficiently."}
+      ]
+
+
+    }
+   },
+   {
+    id: 2, fromTo: "2023-2024", duration: "1 year 3 months", companyName: "Blackbird", position: "Full-stack developer | React, Next & ASP.NET",
     page: {
       title: "Blackbird: Full-stack developer",
       headingText: "At Black Bird, I turned ideas into reality by building modern web applications with React and Next.js, seamlessly integrating and creating ASP.NET APIs to deliver robust and user-centric solutions. From creating the company’s website to contributing to the Prostore app, I combined technical expertise and collaboration to meet client needs and exceed expectations.",
@@ -85,34 +114,6 @@ export const experiances: ResponseDataExperiance[] = [
 
     }
   },
-  { id: 2, fromTo: "2024-2025", duration: "5 months", companyName: "Belit", position: "Full-stack developer | React & ASP.NET",
-    page: {
-      title: "Belit: Full-stack developer",
-      headingText: "At Belit, I designed and developed a robust Document Management System (DMS) using ASP.NET Core API and React to streamline internal operations. Managing the project independently, I enhanced document retrieval efficiency by 60%, ensuring secure storage and seamless access while aligning the system with business needs.",
-      aboutCompany: "Belit is a Serbian IT company specializing in software development and implementation, primarily working on projects for government institutions, ministries, and the European Union. With a team of around 40 employees, the company focuses on optimizing business processes and data management in the public sector. Over the years, Belit has been involved in numerous IT projects aimed at supporting digitalization and improving administrative efficiency.",
-      aboutCompanyImages: ["/images/belit1.png", "/images/belit2.png", "/images/belit3.png"],
-      featuredProjectsText: "At Belit, I worked on developing solutions that streamlined internal processes and improved efficiency. My role involved designing and implementing a robust system that aligned with business needs while ensuring security and scalability. This project showcases my ability to independently build and optimize software solutions tailored for real-world applications.",
-      featuredProjects: [
-        {
-          title: "E-archive (DMS)",
-          text: "Designed and developed a Document Management System (DMS) to streamline internal document storage and organization for the company. \nWorked on the project independently, overseeing the full development lifecycle. \nImplemented secure document handling, ensuring controlled access with Microsoft identity and data integrity. The system provided role-based access control, ensuring that users had permissions tailored to their roles, enhancing security and compliance. \nUtilized GitLab for version control and structured development workflows. \nOptimized document retrieval processes, reducing access time by 60%.",
-          stacl: ["React", "ASP.NET Core"],
-          images: ["/images/earchive1.png", "/images/earchive2.png", "/images/earchive3.png", "/images/earchive4.png"],
-        }
-      ],
-      technologies: [
-        {title : "Frontend", text: "I worked with React to develop structured and maintainable user interfaces, ensuring smooth interaction and usability. By leveraging HTML5 and Sass, I created responsive and accessible designs tailored to internal company needs. Additionally, I focused on optimizing front-end performance and implementing role-based UI elements to align with user permissions and security requirements."},
-        {title : "Backend", text: "On the back end, I utilized ASP.NET Core API to design and develop a well-structured system with role-based access control, ensuring secure document management. My work included seamless integration with SQL databases, optimizing data storage and retrieval processes. Using GitLab for version control and structured workflows, I maintained a scalable and maintainable codebase, enhancing system efficiency and reliability."}
-      ],
-      conclusion: [
-        {title : "Challenge", text: "Managing and organizing internal company documents efficiently was a critical issue, as existing solutions lacked proper structure, access control, and retrieval efficiency. The company needed a secure, role-based Document Management System (DMS) that would allow employees to store, access, and manage files according to their permissions while ensuring data integrity and compliance."},
-        {title : "Solution", text: "I designed and developed a well-structured DMS using ASP.NET Core API and React, implementing a role-based access control system to restrict user permissions based on their roles. The system provided secure document handling, optimized search functionality, and efficient retrieval processes, ensuring that users could only access information relevant to their responsibilities. "},
-        {title : "Result", text: "The newly developed DMS significantly improved document organization and security, reducing retrieval time by 60% and ensuring proper access management across different user roles. The system streamlined internal processes, minimized document mismanagement, and provided a scalable solution for handling company records efficiently."}
-      ]
-
-
-    }
-   },
   { id: 3, fromTo: "2022", duration: "5 months", companyName: "Synsoft LTD.", position: "Front-end developer | Angular & Spring boot",
     page: {
       title: "Synsoft: Front end",

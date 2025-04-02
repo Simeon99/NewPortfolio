@@ -40,8 +40,8 @@ export default function RootLayout({
 
   const items = [
     {
-      text: "What I doo",
-      href: "whatIDoo"
+      text: "What I do",
+      href: "whatIDo"
     },
     {
       text: "About me",

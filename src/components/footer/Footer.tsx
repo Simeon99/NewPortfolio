@@ -25,19 +25,19 @@ const Footer = () => {
                         <div className='flex flex-col gap-4'>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <div onClick={() => handleScroll("whatIDoo")} className="hover:text-[#505050] text-[20px] font-berghan">What I do</div>
+                                <div onClick={() => handleScroll("whatIDo")} className="hover:text-[#505050] text-[20px] font-berghan hover:cursor-pointer">What I do</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <div onClick={() => handleScroll("about")} className="hover:text-[#505050] text-[20px] font-berghan">About me</div>
+                                <div onClick={() => handleScroll("about")} className="hover:text-[#505050] text-[20px] font-berghan hover:cursor-pointer">About me</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <div onClick={() => handleScroll("experience")} className="hover:text-[#505050] text-[20px] font-berghan">Experience</div>
+                                <div onClick={() => handleScroll("experience")} className="hover:text-[#505050] text-[20px] font-berghan hover:cursor-pointer">Experience</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div className='w-6 h-[4px] bg-green'></div>
-                                <div onClick={() => handleScroll("tools")} className="hover:text-[#505050] text-[20px] font-berghan">Tools and languages</div>
+                                <div onClick={() => handleScroll("tools")} className="hover:text-[#505050] text-[20px] font-berghan hover:cursor-pointer">Tools and languages</div>
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@ const Footer = () => {
                         <div className='w-full h-1 bg-green  mt-8'></div>
                         <div className='flex flex-col gap-4 col-span-2 mt-8'>
                             <div className='flex  flex-row items-center gap-[27px]'>
-                                <div onClick={() => handleScroll("whatIDoo")} className="hover:text-[#505050] text-[20px] font-berghan">What I do</div>
+                                <div onClick={() => handleScroll("whatIDo")} className="hover:text-[#505050] text-[20px] font-berghan">What I do</div>
                             </div>
                             <div className='flex  flex-row items-center gap-[27px]'>
                                 <div onClick={() => handleScroll("about")} className="hover:text-[#505050] text-[20px] font-berghan">About me</div>

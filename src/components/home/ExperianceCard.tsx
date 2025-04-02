@@ -9,7 +9,7 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
 
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white  hover:bg-green active:bg-green active:text-black hover:text-black  hover:cursor-pointer`}
+        <Link href={`/experience/${item.id}`} className={`border-t-[1px] ${className} border-white py-4  text-white ${isHovered ? "bg-green !text-black" : "bg-black" } [980px]:hover:text-black    hover:cursor-pointer`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -22,16 +22,16 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
                         {item.duration}
                     </span>
                 </div>
-                <div className={`text-[32px] flex items-center  ${isHovered ? 'max-[980px]:text-black' : 'max-[980px]:text-green'} leading-none`}>{item.companyName}</div> 
+                <div className={`text-[32px] flex items-center  max-[980px]:text-green ${isHovered ? "!text-black":""} leading-none`}>{item.companyName} {isHovered.toString()}</div>
                 <div className='flex-row items-center  gap-2 align-middle hidden max-[980px]:flex'>
-                    <div className={`h-[70%] w-[2px] bg-white ${isHovered ? 'max-[980px]:bg-black' : ''} leading-none`}>
+                    <div className={`h-[70%] w-[2px] bg-white ${isHovered ? 'max-[980px]:bg-black ' : ''} leading-none`}>
                     </div>
                     <div className='flex flex-col'>
                         <span className='text-[20px] '>
                             {item.fromTo}
                         </span>
                         <span className='text-[14px] font-quicksand'>
-                            {item.duration}
+                            {item.duration} 
                         </span>
                     </div>
 

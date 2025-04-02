@@ -18,7 +18,7 @@ const HomeWhatIDo = () => {
     ]
 
     return (
-        <div id='whatIDoo' className='flex flex-col items-center justify-center mt-16'>
+        <div id='whatIDo' className='flex flex-col items-center justify-center mt-16'>
             <h1 className='text-[64px] max-ssw:text-[50px]  leading-none font-bold font-berghan'>
                 What I Do
             </h1>
