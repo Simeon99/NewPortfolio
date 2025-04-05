@@ -22,7 +22,7 @@ const ExperianceCard = ({ item, className }: { item: ResponseDataExperiance, cla
                         {item.duration}
                     </span>
                 </div>
-                <div className={`text-[32px] flex items-center  max-[980px]:text-green ${isHovered ? "!text-black":""} leading-none`}>{item.companyName} {isHovered.toString()}</div>
+                <div className={`text-[32px] flex items-center  max-[980px]:text-green ${isHovered ? "!text-black":""} leading-none`}>{item.companyName}</div>
                 <div className='flex-row items-center  gap-2 align-middle hidden max-[980px]:flex'>
                     <div className={`h-[70%] w-[2px] bg-white ${isHovered ? 'max-[980px]:bg-black ' : ''} leading-none`}>
                     </div>
